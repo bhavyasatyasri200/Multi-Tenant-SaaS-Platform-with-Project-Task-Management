@@ -1,10 +1,10 @@
 #!/bin/sh
 set -e
 
-echo "⏳ Waiting for postgres..."
+echo "⏳ Waiting for Postgres..."
 until nc -z database 5432; do
-  echo "postgres startup...";
-  sleep 1;
+  echo "Postgres starting..."
+  sleep 1
 done
 
 echo "🔄 Running migrations..."
